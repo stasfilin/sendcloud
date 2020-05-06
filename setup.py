@@ -19,9 +19,7 @@ class PyTest(TestCommand):
         import subprocess
         import sys
 
-        errno = subprocess.call(
-            [sys.executable, "-m", "pytest", "tests", "-s"]
-        )
+        errno = subprocess.call([sys.executable, "-m", "pytest", "tests", "-s"])
         raise SystemExit(errno)
 
 
