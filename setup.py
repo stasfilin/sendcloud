@@ -20,7 +20,7 @@ class PyTest(TestCommand):
         import sys
 
         errno = subprocess.call(
-            [sys.executable, "-m", "pytest", "--cov=nest", "tests", "-s"]
+            [sys.executable, "-m", "pytest", "tests", "-s"]
         )
         raise SystemExit(errno)
 
