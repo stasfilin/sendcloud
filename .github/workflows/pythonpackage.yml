@@ -26,8 +26,6 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements/base.txt
-        pip install -r requirements/development.txt
         pip install -e .[develop]
     - name: Test with pytest
       run: |
