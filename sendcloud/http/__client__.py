@@ -1,17 +1,17 @@
 import requests
 import sendcloud
 
-from typing import Any
-
 
 class Client(object):
     client = requests.Session()
 
     def _get_headers(self):
         headers = {"Content-Type": "application/json"}
+        if sendcloud.PARTNER_ID:
+            headers["Sendcloud-Partner-Id"] = sendcloud.PARTNER_ID
         return headers
 
-    def post(self, url: str, data: Any[dict, list]) -> requests.Response:
+    def post(self, url: str, data: dict = None) -> requests.Response:
         """
         Post request to API
         :param url: url
@@ -20,13 +20,13 @@ class Client(object):
         """
         response = self.client.post(
             url,
-            data=data,
+            json=data,
             auth=(sendcloud.API_KEY, sendcloud.API_SECRET),
             headers=self._get_headers(),
         )
         return response
 
-    def get(self, url: str, query: dict) -> requests.Response:
+    def get(self, url: str, query: dict = None) -> requests.Response:
         """
         Get request to API
         :param url: url
@@ -41,7 +41,7 @@ class Client(object):
         )
         return response
 
-    def put(self, url: str, data: Any[dict, list]) -> requests.Response:
+    def put(self, url: str, data: dict) -> requests.Response:
         """
         Put request to API
         :param url: url

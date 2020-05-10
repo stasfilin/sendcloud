@@ -1,0 +1,86 @@
+{
+  "parcels": [
+    {
+      "id": 3,
+      "name": "John Doe",
+      "company_name": "Sendcloud",
+      "address": "Insulindelaan 115",
+      "address_divided": {
+        "street": "Insulindelaan",
+        "house_number": "115"
+      },
+      "city": "Eindhoven",
+      "postal_code": "5642CV",
+      "telephone": "+31612345678",
+      "email": "",
+      "date_created": "01-01-2018 21:45:30",
+      "tracking_number": "S0M3TR4Ck1NgNumB3r",
+      "weight": "10.000",
+      "label": {
+        "normal_printer": [
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=0&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=1&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=2&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=3&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+        ],
+        "label_printer": "https://panel.sendcloud.sc/api/v2/label/label_printer/3172?hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+      },
+      "customs_declaration": {},
+      "status": {
+        "id": 0,
+        "message": "Ready to send"
+      },
+      "data": [],
+      "country": {
+        "iso_3": "NLD",
+        "iso_2": "NL",
+        "name": "Netherlands"
+      },
+      "shipment": {
+        "id": 8,
+        "name": "Unstamped letter"
+      }
+    },
+    {
+      "id": 4,
+      "name": "John Doe",
+      "company_name": "Sendcloud",
+      "address": "Insulindelaan 115",
+      "address_divided": {
+        "street": "Insulindelaan",
+        "house_number": "115"
+      },
+      "city": "Eindhoven",
+      "postal_code": "5642CV",
+      "telephone": "+31612345678",
+      "email": "",
+      "date_created": "01-01-2018 21:45:30",
+      "tracking_number": "S0M3TR4Ck1NgNumB3r",
+      "weight": "8.000",
+      "label": {
+        "normal_printer": [
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=0&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=1&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=2&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+          "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=3&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+        ],
+        "label_printer": "https://panel.sendcloud.sc/api/v2/label/label_printer/3172?hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+      },
+      "customs_declaration": {},
+      "status": {
+        "id": 0,
+        "message": "Ready to send"
+      },
+      "data": [],
+      "country": {
+        "iso_3": "NLD",
+        "iso_2": "NL",
+        "name": "Netherlands"
+      },
+      "shipment": {
+        "id": 8,
+        "name": "Unstamped letter"
+      }
+    }
+  ]
+}
