@@ -1,15 +1,31 @@
-class Invoices(object):
+import sendcloud
+from sendcloud.http import Client
+
+
+class Invoices(Client):
     def get_invoices(self):
         """
-        GET https://panel.sendcloud.sc/api/v2/user/invoices
+        With this enpoint you can get all the invoices that have been issued to your account.
 
         :return:
         """
 
+        url = sendcloud.BASE_URL + f"user/invoices"
+
+        response = self.get(url)
+
+        return response.json()
+
     def get_invoice(self, pk: str):
         """
-        GET https://panel.sendcloud.sc/api/v2/user/invoices/{id}
+        With this enpoint you can get a specific invoice that has been issued to your account.
 
         :param pk:
         :return:
         """
+
+        url = sendcloud.BASE_URL + f"user/invoices/{pk}"
+
+        response = self.get(url)
+
+        return response.json()

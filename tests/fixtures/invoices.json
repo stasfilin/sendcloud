@@ -1,0 +1,14 @@
+{
+  "invoices": [
+    {
+      "date": "05-06-2018 11:58:52",
+      "id": 1,
+      "isPayed": false,
+      "items": "https://panel.sendcloud.sc/api/v2/user/invoices/1",
+      "price_excl": 77.4,
+      "price_incl": 93.65,
+      "ref": "1",
+      "type": "periodic"
+    }
+  ]
+}

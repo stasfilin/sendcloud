@@ -1,0 +1,49 @@
+{
+    "invoice": {
+        "date": "05-06-2018 11:58:52",
+        "id": 1,
+        "isPayed": false,
+        "items": [
+            {
+                "id": 1,
+                "name": "PostNL Netherlands 0-30kg"
+            },
+            {
+                "id": 2,
+                "name": "PostNL Netherlands 0-30kg"
+            },
+            {
+                "id": 3,
+                "name": "UPS Standard 0-3kg"
+            },
+            {
+                "id": 4,
+                "name": "Chrono Classic 0-30kg"
+            },
+            {
+                "id": 5,
+                "name": "PostNL Netherlands 0-30kg"
+            },
+            {
+                "id": 6,
+                "name": "PostNL Netherlands 0-30kg"
+            },
+            {
+                "id": 7,
+                "name": "PostNL Netherlands 0-30kg"
+            },
+            {
+                "id": 8,
+                "name": "Chrono Classic 0-30kg"
+            },
+            {
+                "id": 9,
+                "name": "DHL Europlus"
+            }
+        ],
+        "price_excl": 77.4,
+        "price_incl": 93.65,
+        "ref": "1",
+        "type": "periodic"
+    }
+}
