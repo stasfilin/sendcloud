@@ -19,9 +19,9 @@ class TestParcels(SendcloudTestCase):
                 json=self.get_fixture("returns.json"),
             )
 
-            parcels = Returns().get_returns()
+            returns = Returns().get_returns()
 
-            assert parcels["returns"][0]["id"] == 3
+            assert returns["returns"][0]["id"] == 3
 
     def test_specific_return(self):
 
@@ -32,6 +32,6 @@ class TestParcels(SendcloudTestCase):
                 json=self.get_fixture("return_3.json"),
             )
 
-            parcels = Returns().get_return("3")
+            returns = Returns().get_return("3")
 
-            assert parcels["id"] == 3
+            assert returns["id"] == 3
