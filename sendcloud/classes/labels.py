@@ -1,15 +1,31 @@
-class Labels(object):
-    def get_labels(self):
-        """
-        GET https://panel.sendcloud.sc/api/v2/labels/{id}
+import sendcloud
+from sendcloud.http import Client
 
+
+class Labels(Client):
+    def get_labels(self, pk: str):
+        """
+        Get labels
+        :param pk: label ID
         :return:
         """
+
+        url = sendcloud.BASE_URL + f"labels/{pk}"
+
+        response = self.get(url)
+
+        return response.json()
 
     def bulk_pdf_label_printing(self, array):
         """
-        POST https://panel.sendcloud.sc/api/v2/labels
+        Using this endpoint you may print your parcel labels in bulk.
 
-        :param array:
+        :param array: payload
         :return:
         """
+
+        url = sendcloud.BASE_URL + f"labels"
+
+        response = self.post(url, array)
+
+        return response.json()

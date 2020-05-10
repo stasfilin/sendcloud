@@ -23,7 +23,7 @@ class TestParcels(SendcloudTestCase):
 
             assert brands["brands"][0]["id"] == 1
 
-    def test_specific_return(self):
+    def test_specific_brand(self):
 
         with requests_mock.Mocker() as mocker:
             mocker.register_uri(
