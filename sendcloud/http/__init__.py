@@ -1,1 +1,1 @@
-from .__client__ import *  # noqa
+from .__client__ import Client  # noqa
