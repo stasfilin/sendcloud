@@ -6,6 +6,11 @@ Unofficial Python Library
 
 This is a Python library that provides a simple way to communicate with the Sendcloud API. 
 
+## Installation 
+```sh
+pip install sendcloud-python
+```
+
 ## Example
 
 ```python
