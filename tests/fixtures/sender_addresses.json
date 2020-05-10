@@ -1,0 +1,36 @@
+{
+  "sender_addresses": [
+    {
+      "id": 2,
+      "company_name": "French Company",
+      "contact_name": "Marie Doe",
+      "email": "info@sendcloud.fr",
+      "telephone": "",
+      "street": "Rue Villiers de l'Isle Adam",
+      "house_number": "33",
+      "postal_box": "",
+      "postal_code": "35000",
+      "city": "Rennes",
+      "country": "FR",
+      "vat_number": "NL123456789B01",
+      "coc_number": "NL12345678",
+      "eori_number": "NL123456789"
+    },
+    {
+      "id": 1,
+      "company_name": "Sendcloud",
+      "contact_name": "John Doe",
+      "email": "johndoe@sendcloud.com",
+      "telephone": "+31626262626",
+      "street": "Bogert",
+      "house_number": "115",
+      "postal_box": "",
+      "postal_code": "5642 CV",
+      "city": "Eindhoven",
+      "country": "NL",
+      "vat_number": "NL123456789B01",
+      "coc_number": "NL12345678",
+      "eori_number": "NL123456789"
+    }
+  ]
+}

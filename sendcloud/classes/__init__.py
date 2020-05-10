@@ -5,3 +5,4 @@ from .shipping_methods import ShippingMethods
 from .labels import Labels
 from .users import Users
 from .invoices import Invoices
+from .sender_address import SenderAddress

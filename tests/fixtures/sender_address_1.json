@@ -1,0 +1,18 @@
+{
+    "sender_address": {
+        "city": "Eindhoven",
+        "company_name": "Sendcloud",
+        "contact_name": "John Doe",
+        "country": "NL",
+        "email": "johndoe@sendcloud.com",
+        "house_number": "115",
+        "id": 1,
+        "postal_box": "",
+        "postal_code": "5642 CV",
+        "street": "Insulindelaan",
+        "telephone": "+31626262626",
+        "vat_number": "NL123456789B01",
+        "coc_number": "NL12345678",
+        "eori_number": "NL123456789"
+    }
+}
