@@ -1,0 +1,45 @@
+{
+  "user": {
+      "address": "Insulindelaan",
+      "city": "Eindhoven",
+      "company_logo": null,
+      "company_name": "Sendcloud",
+      "data": [],
+      "email": "johndoe@sendcloud.nl",
+      "invoices": [
+          {
+              "date": "05-06-2018 11:58:52",
+              "id": 1,
+              "isPayed": false,
+              "items": "https://panel.sendcloud.sc/api/v2/user/invoices/1",
+              "price_excl": 77.4,
+              "price_incl": 93.65,
+              "ref": "1",
+              "type": "periodic"
+          }
+      ],
+      "modules": [
+          {
+              "activated": true,
+              "id": 5,
+              "name": "Sendcloud Client",
+              "settings": null,
+              "short_name": "sendcloud_client"
+          },
+          {
+            "id": 3,
+            "name": "Prestashop Integration",
+            "settings": {
+              "url_webshop": "http://localhost/testing/prestashop",
+              "api_key": "O8ALXHMM24QULWM213CC6SGQ5VDJKC8W"
+            },
+            "activated": true,
+            "short_name": "prestashop"
+          }
+      ],
+      "postal_code": "5642CV",
+      "registered": "2018-05-29 12:52:51",
+      "telephone": "+31626262626",
+      "username": "johndoe"
+  }
+}

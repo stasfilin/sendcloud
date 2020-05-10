@@ -1,7 +1,17 @@
-class Users(object):
+import sendcloud
+from sendcloud.http import Client
+
+
+class Users(Client):
     def get_current_user(self):
         """
-        GET https://panel.sendcloud.sc/api/v2/user
+        With this endpoint you can request the data that is connected with your own user.
 
         :return:
         """
+
+        url = sendcloud.BASE_URL + f"user"
+
+        response = self.get(url)
+
+        return response.json()
