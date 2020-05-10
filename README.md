@@ -1,7 +1,6 @@
 # SendCloud
+![Python package](https://github.com/stasfilin/sendcloud/workflows/Python%20package/badge.svg?branch=master)
 Unofficial Python Library
-
-![Python package](https://github.com/stasfilin/sendcloud/workflows/Python%20package/badge.svg)
 
 This is a Python library that provides a simple way to communicate with the Sendcloud API. 
 
