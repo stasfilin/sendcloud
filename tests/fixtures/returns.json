@@ -1,0 +1,48 @@
+{
+  "next": null,
+  "previous": null,
+  "returns": [
+    {
+      "id": 3,
+      "email": "Customer@email.com",
+      "created_at": "2019-09-19T16:28:19.786671+02:00",
+      "reason": null,
+      "outgoing_parcel": null,
+      "incoming_parcel": 8,
+      "message": "",
+      "status": "sh",
+      "refund": null,
+      "status_display": "Shipment",
+      "is_cancellable": false,
+      "label_cost": 5.85,
+      "items_cost": 110.0,
+      "delivered_at": null,
+      "delivery_option": "drop_off_point",
+      "outgoing_parcel_data": {
+        "tracking_url": "http://tracking:8000/forward?carrier=dhl&code=AN07H3RTR4Ck1NgNumB3r&destination=NL&lang=en-us&source=NL&type=parcel&verification=1234AB&created_at=2019-09-10",
+        "tracking_number": "AN07H3RTR4Ck1NgNumB3r",
+        "parcel_status": 11,
+        "global_status_slug": "delivered",
+        "brand_name": "My Awesome Brand",
+        "order_number": "00000001",
+        "from_email": "Merchant@shop.com",
+        "deleted": false
+      },
+      "incoming_parcel_data": {
+        "tracking_url": "http://tracking:8000/forward?carrier=postnl&code=S0M3TR4Ck1NgNumB3r&destination=NL&lang=en-us&source=NL&type=parcel&verification=1234AB&created_at=2019-09-19",
+        "tracking_number": "S0M3TR4Ck1NgNumB3r",
+        "parcel_status": 1000,
+        "global_status_slug": "ready-to-send",
+        "brand_name": "My Awesome Brand",
+        "order_number": "00000001",
+        "from_email": "Customer@email.com",
+        "deleted": false
+      },
+      "incoming_parcel_status": {
+        "id": 1000,
+        "message": "Ready to send",
+        "global_status_slug": "ready-to-send"
+      }
+    }
+  ]
+}
