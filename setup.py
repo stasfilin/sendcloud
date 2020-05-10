@@ -24,7 +24,7 @@ class PyTest(TestCommand):
 
 
 setup(
-    name="sendcloud",
+    name="sendcloud-python",
     version=__version__.__version__,
     license="MIT",
     url="https://github.com/stasfilin/sendcloud",
