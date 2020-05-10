@@ -1,0 +1,80 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "address": "Insulindelaan",
+      "address_2": "",
+      "allowed_shipping_methods": [
+        255,
+        258,
+        264
+      ],
+      "barcode": "PS0000000000000372",
+      "city": "Eindhoven",
+      "company_name": "Sendcloud",
+      "country": "NL",
+      "created_at": "2018-02-26T10:01:47.505309+00:00",
+      "currency": "EUR",
+      "customs_invoice_nr": "",
+      "customs_shipment_type": null,
+      "email": "rob@sendcloud.nl",
+      "external_order_id": "123456",
+      "external_shipment_id": "123456",
+      "house_number": "115",
+      "integration": 1,
+      "name": "Pedro",
+      "order_number": "0987654321",
+      "order_status": {
+        "id": "fulfilled",
+        "message": "Fullfilled"
+      },
+      "shipment_uuid": "928a46f4-8891-4c09-8889-6d0f7c1dc01c",
+      "parcel_items": [
+        {
+          "description": "T-Shirt",
+          "hs_code": "",
+          "origin_country": "",
+          "product_id": "a_random_id",
+          "properties": {
+            "Color": "Blue",
+            "Size": "Medium"
+          },
+          "quantity": 2,
+          "sku": "a_random_sku",
+          "value": "300",
+          "weight": "0.300"
+        },
+        {
+          "description": "Trousers",
+          "hs_code": "",
+          "origin_country": "",
+          "product_id": "a_random_id_2",
+          "properties": {
+            "Color": "Black",
+            "Cut": "Slim",
+            "Size": "42"
+          },
+          "quantity": 1,
+          "sku": "a_random_sku_2",
+          "value": "100",
+          "weight": "0.3"
+        }
+      ],
+      "payment_status": {
+        "id": "paid",
+        "message": "Paid"
+      },
+      "postal_code": "5642 CV",
+      "sender_address": 1,
+      "shipping_method": 258,
+      "shipping_method_checkout_name": "Super Duper Store Express Shipping",
+      "updated_at": "2018-02-26T11:01:47.505309+00:00",
+      "telephone": "+31614533461",
+      "to_post_number": "",
+      "to_service_point": null,
+      "to_state": null,
+      "weight": "1.000"
+    }
+  ]
+}

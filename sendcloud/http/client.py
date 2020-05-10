@@ -1,3 +1,5 @@
+from typing import Union
+
 import requests
 import sendcloud
 
@@ -11,7 +13,7 @@ class Client(object):
             headers["Sendcloud-Partner-Id"] = sendcloud.PARTNER_ID
         return headers
 
-    def post(self, url: str, data: dict = None) -> requests.Response:
+    def post(self, url: str, data: Union[dict, list] = None) -> requests.Response:
         """
         Post request to API
         :param url: url

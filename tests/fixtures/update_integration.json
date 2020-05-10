@@ -1,0 +1,11 @@
+{
+  "shop_name": "API Integration",
+  "shop_url": "https://www.google.com",
+  "system": "api",
+  "failing_since": null,
+  "last_updated_at": null,
+  "service_point_enabled": false,
+  "service_point_carriers": [],
+  "webhook_active": false,
+  "webhook_url": ""
+}

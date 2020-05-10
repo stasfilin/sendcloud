@@ -6,3 +6,4 @@ from .labels import Labels
 from .users import Users
 from .invoices import Invoices
 from .sender_address import SenderAddress
+from .integrations_and_orders import IntegrationsAndOrders

@@ -1,0 +1,188 @@
+[
+    {
+        "address": "Insulindelaan",
+        "address_2": "",
+        "city": "Eindhoven",
+        "company_name": "Sendcloud",
+        "country": "NL",
+        "created_at": "2018-02-26T10:00:00.555309+00:00",
+        "currency": "EUR",
+        "customs_invoice_nr": "",
+        "customs_shipment_type": null,
+        "email": "rob@sendcloud.nl",
+        "external_order_id": "123456",
+        "external_shipment_id": null,
+        "house_number": "115",
+        "name": "Pedro",
+        "order_number": "0987654321",
+        "order_status": {
+            "id": "fulfilled",
+            "message": "Fullfilled"
+        },
+        "parcel_items": [
+            {
+                "description": "T-Shirt",
+                "hs_code": "",
+                "origin_country": "",
+                "product_id": "a_random_id",
+                "properties": {
+                    "Color": "Blue",
+                    "Size": "Medium"
+                },
+                "quantity": 2,
+                "sku": "a_random_sku",
+                "value": "300",
+                "weight": "0.300"
+            },
+            {
+                "description": "Trousers",
+                "hs_code": "",
+                "origin_country": "",
+                "product_id": "a_random_id_2",
+                "properties": {
+                    "Color": "Black",
+                    "Cut": "Slim",
+                    "Size": "42"
+                },
+                "quantity": 1,
+                "sku": "a_random_sku_2",
+                "value": "100",
+                "weight": "0.3"
+            }
+        ],
+        "payment_status": {
+            "id": "paid",
+            "message": "Paid"
+        },
+        "postal_code": "5642 CV",
+        "sender_address": 1,
+        "shipping_method": 258,
+        "shipping_method_checkout_name": "Super Duper Store Express Shipping",
+        "telephone": "+31612345678",
+        "to_post_number": "",
+        "to_service_point": null,
+        "to_state": null,
+        "updated_at": "2018-02-26T11:01:47.505309+00:00",
+        "weight": "0.900"
+    },
+    {
+        "address": "Hercules Segherslaan",
+        "address_2": "",
+        "city": "Eindhoven",
+        "company_name": "Sendcloud",
+        "country": "NL",
+        "created_at": "2018-02-26T10:00:00.555309+00:00",
+        "currency": "EUR",
+        "customs_invoice_nr": "",
+        "customs_shipment_type": null,
+        "email": "rob@sendcloud.nl",
+        "external_order_id": "123457",
+        "external_shipment_id": "S00002",
+        "house_number": "115",
+        "name": "Pedro",
+        "order_number": "0987654321",
+        "order_status": {
+            "id": "fulfilled",
+            "message": "Fullfilled"
+        },
+        "parcel_items": [
+            {
+                "description": "Robocop",
+                "hs_code": "",
+                "origin_country": "",
+                "product_id": "robo_id",
+                "properties": {},
+                "quantity": 1,
+                "sku": "robo_cop",
+                "value": "1000",
+                "weight": "300"
+            },
+            {
+                "description": "T-1000",
+                "hs_code": "",
+                "origin_country": "",
+                "product_id": "t_1000",
+                "properties": {
+                    "Number of Guns": "2"
+                },
+                "quantity": 1,
+                "sku": "t_1000_sku",
+                "value": "2000",
+                "weight": "2000"
+            }
+        ],
+        "payment_status": {
+            "id": "paid",
+            "message": "Paid"
+        },
+        "postal_code": "5642 CV",
+        "shipments": [],
+        "shipping_method_checkout_name": "Pallet Shipping",
+        "telephone": "+31612345678",
+        "to_post_number": "",
+        "to_service_point": null,
+        "to_state": null,
+        "updated_at": "2018-02-26T11:01:47.505309+00:00",
+        "weight": "2300"
+    },
+    {
+          "address": null,
+          "address_2": "",
+          "city": "Eindhoven",
+          "company_name": "Sendcloud",
+          "country": "NL",
+          "created_at": "2018-02-26T10:00:00.555309+00:00",
+          "currency": "EUR",
+          "customs_invoice_nr": "",
+          "customs_shipment_type": null,
+          "email": "rob@sendcloud.nl",
+          "external_order_id": "123458",
+          "external_shipment_id": null,
+          "house_number": "115",
+          "name": "Pedro",
+          "order_number": "0987654321",
+          "order_status": {
+              "id": "fulfilled",
+              "message": "Fullfilled"
+          },
+          "parcel_items": [
+              {
+                  "description": "Robocop",
+                  "hs_code": "",
+                  "origin_country": "",
+                  "product_id": "robo_id",
+                  "properties": {},
+                  "quantity": 1,
+                  "sku": "robo_cop",
+                  "value": "1000",
+                  "weight": "300"
+              },
+              {
+                  "description": "T-1000",
+                  "hs_code": "",
+                  "origin_country": "",
+                  "product_id": "t_1000",
+                  "properties": {
+                      "Number of Guns": "2"
+                  },
+                  "quantity": 1,
+                  "sku": "t_1000_sku",
+                  "value": "2000",
+                  "weight": "2000"
+              }
+          ],
+          "payment_status": {
+              "id": "paid",
+              "message": "Paid"
+          },
+          "postal_code": "5642 CV",
+          "shipments": [],
+          "shipping_method_checkout_name": "Pallet Shipping",
+          "telephone": "+31612345678",
+          "to_post_number": "",
+          "to_service_point": null,
+          "to_state": null,
+          "updated_at": "2018-02-26T11:01:47.505309+00:00",
+          "weight": "2300"
+      }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "external_order_id": "123456",
+        "external_shipment_id": null,
+        "shipment_uuid": "39874b59-2a68-4a3d-8e00-aeb9e0540d00",
+        "status": "created"
+    },
+    {
+        "external_order_id": "123457",
+        "external_shipment_id": "S00002",
+        "shipment_uuid": "e40328d4-00d7-436a-a625-4c799dbecda4",
+        "status": "updated"
+    },
+    {
+        "error": {
+            "address": [
+                "This Field should not be null"
+            ]
+        },
+        "external_order_id": "123458",
+        "external_shipment_id": null,
+        "status": "error"
+    }
+]
