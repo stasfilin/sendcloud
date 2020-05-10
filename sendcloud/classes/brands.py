@@ -1,16 +1,31 @@
-class Brands(object):
+import sendcloud
+from sendcloud.http import Client
+
+
+class Brands(Client):
     def get_brands(self):
         """
-        GET https://panel.sendcloud.sc/api/v2/brands
+        This endpoint retrieves all brands.
 
         :return:
         """
-        pass
+
+        url = sendcloud.BASE_URL + "brands"
+
+        response = self.get(url)
+
+        return response.json()
 
     def get_brand(self, pk: str):
         """
-        GET https://panel.sendcloud.sc/api/v2/brand/{id}
+        This endpoint retrieves a specific brand from your account based on id.
 
-        :param pk:
+        :param pk: brand ID
         :return:
         """
+
+        url = sendcloud.BASE_URL + f"brand/{pk}"
+
+        response = self.get(url)
+
+        return response.json()

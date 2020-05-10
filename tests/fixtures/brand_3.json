@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "name": "My beautiful brand",
+  "color": "#aa0000",
+  "secondary_color": "#a80000",
+  "website": "http://mybeautifulbrand.com",
+  "overlay_logo": {},
+  "screen_logo": {
+    "url": "http://..."
+  },
+  "print_logo": {
+    "url": "http://..."
+  },
+  "overlay_thumb": null,
+  "screen_thumb": "http://...",
+  "print_thumb": "http://...",
+  "notify_reply_to_email": 1,
+  "domain": "mybeautifulbrand",
+  "notify_bcc_email": 1,
+  "hide_powered_by": false
+}
