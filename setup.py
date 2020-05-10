@@ -11,6 +11,9 @@ with open(join(dirname(__file__), "requirements/base.txt")) as f:
 with open(join(dirname(__file__), "requirements/development.txt")) as f:
     required_development = f.read().splitlines()
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 
 class PyTest(TestCommand):
     user_options = []
@@ -26,6 +29,8 @@ class PyTest(TestCommand):
 setup(
     name="sendcloud-python",
     version=__version__.__version__,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/stasfilin/sendcloud",
     author="Stanislav Filin",
