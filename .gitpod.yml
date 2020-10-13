@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+- init: >
+    python3 -m pip install -e .[develop]
+  command: >
+    python setup.py test
+github:
+    prebuilds:
+        pullRequestsFromForks: true
+vscode:
+  extensions:
+    - BazelBuild.vscode-bazel@0.4.0:CNqPe08EnThWfsQXBuinsQ==
