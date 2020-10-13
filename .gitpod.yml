@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
 - init: >
-    python3 -m pip3 install -e .[develop]
+    pip3 install -e .[develop]
   command: >
     python3 setup.py test
 github:
