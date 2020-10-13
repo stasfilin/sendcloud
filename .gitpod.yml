@@ -2,9 +2,9 @@ image:
   file: .gitpod.Dockerfile
 tasks:
 - init: >
-    pip3 install -e .[develop]
+    python --version
   command: >
-    python3 setup.py test
+    python setup.py test
 github:
     prebuilds:
         pullRequestsFromForks: true
