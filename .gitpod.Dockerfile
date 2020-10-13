@@ -1,7 +1,5 @@
 FROM python:3.8
 
-
-RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update && apt-get install -y curl
 
 RUN apt install curl
