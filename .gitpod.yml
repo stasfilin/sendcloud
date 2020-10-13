@@ -4,7 +4,7 @@ tasks:
 - init: >
     python3 -m pip install -e .[develop]
   command: >
-    python setup.py test
+    python3.8 setup.py test
 github:
     prebuilds:
         pullRequestsFromForks: true
