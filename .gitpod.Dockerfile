@@ -1,4 +1,11 @@
-FROM gcr.io/cloud-marketplace-containers/google/bazel:latest
+FROM python:3.8
+
 
 RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt-get update && apt-get install -y python3.8 python3.8-distutils python3.8-pip
+RUN apt-get update && apt-get install -y curl
+
+RUN apt install curl
+RUN curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+
+RUN apt update && sudo apt install -y bazel
