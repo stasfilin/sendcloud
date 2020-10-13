@@ -2,7 +2,8 @@ image:
   file: .gitpod.Dockerfile
 tasks:
 - init: >
-    python --version
+    pip install -r requirements/base.txt
+    pip install -r requirements/development.txt
   command: >
     python setup.py test
 github:
