@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
 - init: >
-    python3 -m pip install -e .[develop]
+    python3.8 -m pip3.8 install -e .[develop]
   command: >
     python3.8 setup.py test
 github:
