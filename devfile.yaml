@@ -5,7 +5,8 @@ projects:
   - name: sendcloud
     source:
       location: 'https://github.com/stasfilin/sendcloud.git'
-      type: git
+      type: github
+      startPoint: master
 components:
   - type: chePlugin
     id: ms-python/python/latest
@@ -15,6 +16,8 @@ components:
     image: 'quay.io/eclipse/che-python-3.7:nightly'
     memoryLimit: 512Mi
     mountSources: true
+  - id: cdr/code-server/latest
+    type: cheEditor
 commands:
   - name: run
     actions:
