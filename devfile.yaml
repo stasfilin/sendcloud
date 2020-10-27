@@ -16,8 +16,6 @@ components:
     image: 'quay.io/eclipse/che-python-3.7:nightly'
     memoryLimit: 512Mi
     mountSources: true
-  - id: cdr/code-server/latest
-    type: cheEditor
 commands:
   - name: run
     actions:
