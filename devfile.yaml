@@ -16,6 +16,11 @@ components:
     image: 'quay.io/eclipse/che-python-3.7:nightly'
     memoryLimit: 512Mi
     mountSources: true
+  - type: dockerimage
+    mountSources: true
+    memoryLimit: 512Mi
+    alias: rsync
+    image: 'quay.io/fbenoit/rsync-simple:latest' 
 commands:
   - name: run
     actions:
