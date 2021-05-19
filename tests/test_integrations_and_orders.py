@@ -48,7 +48,7 @@ class TestParcels(SendcloudTestCase):
         with requests_mock.Mocker() as mocker:
             mocker.register_uri(
                 "GET",
-                sendcloud.BASE_URL + "integrations/1/shipment",
+                sendcloud.BASE_URL + "integrations/1/shipments",
                 json=self.get_fixture("shipment_1.json"),
             )
 
