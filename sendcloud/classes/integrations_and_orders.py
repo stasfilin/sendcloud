@@ -44,7 +44,7 @@ class IntegrationsAndOrders(Client):
         :return:
         """
 
-        url = sendcloud.BASE_URL + f"integrations/{pk}/shipment"
+        url = sendcloud.BASE_URL + f"integrations/{pk}/shipments"
 
         response = self.get(url, query)
 
