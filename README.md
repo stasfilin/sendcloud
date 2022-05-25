@@ -1,5 +1,8 @@
 # SendCloud
 ![Python package](https://github.com/stasfilin/sendcloud/workflows/Python%20package/badge.svg?branch=master)
+[![Downloads](https://pepy.tech/badge/sendcloud-python)](https://pepy.tech/project/sendcloud-python)
+[![Downloads](https://pepy.tech/badge/sendcloud-python/month)](https://pepy.tech/project/sendcloud-python)
+[![Downloads](https://pepy.tech/badge/sendcloud-python/week)](https://pepy.tech/project/sendcloud-python)
 
 
 Unofficial Python Library
