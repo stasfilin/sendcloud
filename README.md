@@ -4,6 +4,8 @@
 [![Downloads](https://pepy.tech/badge/sendcloud-python/month)](https://pepy.tech/project/sendcloud-python)
 [![Downloads](https://pepy.tech/badge/sendcloud-python/week)](https://pepy.tech/project/sendcloud-python)
 
+[![sendcloud-python](https://snyk.io/advisor/python/sendcloud-python/badge.svg)](https://snyk.io/advisor/python/sendcloud-python)
+
 
 Unofficial Python Library
 
