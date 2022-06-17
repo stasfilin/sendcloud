@@ -107,6 +107,6 @@ class Parcels(Client):
         :return:
         """
 
-        url = sendcloud.BASE_URL + f"parcels/statuses"
+        url = sendcloud.BASE_URL + "parcels/statuses"
         response = self.get(url)
         return response.json()

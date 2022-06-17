@@ -1,6 +1,6 @@
 import requests_mock
 
-from tests.testcase import SendcloudTestCase
+from .testcase import SendcloudTestCase
 
 import sendcloud
 from sendcloud.classes import Users
