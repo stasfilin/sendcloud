@@ -1,9 +1,10 @@
 import sendcloud
 from sendcloud.http import Client
+from sendcloud.types import JSONType
 
 
 class IntegrationsAndOrders(Client):
-    def get_integrations(self):
+    def get_integrations(self) -> JSONType:
         """
         Retrieving your list of integrations
 
@@ -16,7 +17,7 @@ class IntegrationsAndOrders(Client):
 
         return response.json()
 
-    def update_integrations(self, pk: str, array: dict):
+    def update_integrations(self, pk: str, array: dict) -> JSONType:
         """
         You can update an integration’s settings through a PUT request to our Integration endpoint.
 
@@ -31,7 +32,7 @@ class IntegrationsAndOrders(Client):
 
         return response.json()
 
-    def retrieving_shipments(self, pk: str, query: dict = None):
+    def retrieving_shipments(self, pk: str, query: dict = None) -> JSONType:
         """
         You’re able to retrieve the list of shipments from an integration
         (as seen in our product’s “Incoming Orders” area).
@@ -50,7 +51,7 @@ class IntegrationsAndOrders(Client):
 
         return response.json()
 
-    def insert_shipments(self, pk: str, body: list):
+    def insert_shipments(self, pk: str, body: list) -> JSONType:
         """
         You can insert shipments into an API integration.
         This is a more refined and supported way of creating shipments within our
@@ -89,7 +90,7 @@ class IntegrationsAndOrders(Client):
 
         return response.json()
 
-    def delete_orders(self, pk: str, body: dict):
+    def delete_orders(self, pk: str, body: dict) -> JSONType:
         """
         If orders are cancelled or deleted in a shop you must remove them from our database
         (as the fields “order_status” and “payment_status” are not mapped to anything within our systems).

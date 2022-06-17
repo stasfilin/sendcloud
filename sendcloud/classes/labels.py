@@ -1,9 +1,10 @@
 import sendcloud
 from sendcloud.http import Client
+from sendcloud.types import JSONType
 
 
 class Labels(Client):
-    def get_labels(self, pk: str):
+    def get_labels(self, pk: str) -> JSONType:
         """
         Get labels
         :param pk: label ID
@@ -16,7 +17,7 @@ class Labels(Client):
 
         return response.json()
 
-    def bulk_pdf_label_printing(self, array):
+    def bulk_pdf_label_printing(self, array: dict) -> JSONType:
         """
         Using this endpoint you may print your parcel labels in bulk.
 

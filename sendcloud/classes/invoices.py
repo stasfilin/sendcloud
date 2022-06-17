@@ -1,9 +1,10 @@
 import sendcloud
 from sendcloud.http import Client
+from sendcloud.types import JSONType
 
 
 class Invoices(Client):
-    def get_invoices(self):
+    def get_invoices(self) -> JSONType:
         """
         With this enpoint you can get all the invoices that have been issued to your account.
 
@@ -16,7 +17,7 @@ class Invoices(Client):
 
         return response.json()
 
-    def get_invoice(self, pk: str, query: dict = None):
+    def get_invoice(self, pk: str, query: dict = None) -> JSONType:
         """
         With this enpoint you can get a specific invoice that has been issued to your account.
 

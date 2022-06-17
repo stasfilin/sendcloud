@@ -1,10 +1,11 @@
 import sendcloud
 from sendcloud.http import Client
 from sendcloud.http.exceptions import ParcelNotFound
+from sendcloud.types import JSONType
 
 
 class Parcels(Client):
-    def get_parcels(self, query: dict = None):
+    def get_parcels(self, query: dict = None) -> JSONType:
         """
         This endpoint retrieves all parcels which you have imported under your provided API credentials.
         You may filter parcels on the query parameters provided below.
@@ -18,7 +19,7 @@ class Parcels(Client):
 
         return response.json()
 
-    def get_parcel(self, pk: str):
+    def get_parcel(self, pk: str) -> JSONType:
         """
         This endpoint retrieves a specific parcel from your account based on parcel id.
 
@@ -32,7 +33,7 @@ class Parcels(Client):
             raise ParcelNotFound("No Parcel matches the given query.")
         return response.json()
 
-    def create_parcel(self, data: dict):
+    def create_parcel(self, data: dict) -> JSONType:
         """
         This endpoint creates a parcel under your user, for which you can request a label immediately.
         In order to create a parcel you have to pass some additional arguments in JSON format
@@ -46,7 +47,7 @@ class Parcels(Client):
         response = self.post(url, data)
         return response.json()
 
-    def update_parcel(self, data: dict):
+    def update_parcel(self, data: dict) -> JSONType:
         """
         This endpoint updates a parcel with the option to request a label - if it hasn’t been requested before.
         The post request parameters have to be nested under a parcel object.
@@ -59,7 +60,7 @@ class Parcels(Client):
         response = self.put(url, data)
         return response.json()
 
-    def cancel_parcel(self, pk: str):
+    def cancel_parcel(self, pk: str) -> JSONType:
         """
         This endpoint updates a parcel with the option to request a label for it if it hasn’t been requested before.
         Mind that the post request parameters have to be nested under a parcel object.
@@ -72,7 +73,7 @@ class Parcels(Client):
         response = self.post(url)
         return response.json()
 
-    def return_portal_url(self, pk: str):
+    def return_portal_url(self, pk: str) -> JSONType:
         """
         This endpoint returns the url to the return portal for a parcel.
         If there is no brand connected to the parcel or no return portal is configured,
@@ -85,7 +86,7 @@ class Parcels(Client):
         response = self.get(url)
         return response.json()
 
-    def get_parcel_documents(self, pk: str, document_type: str):
+    def get_parcel_documents(self, pk: str, document_type: str) -> JSONType:
         """
         The resolution of the returned document can be changed as well,
         this can be done by passing a dpi request argument.
@@ -99,7 +100,7 @@ class Parcels(Client):
         response = self.get(url)
         return response.json()
 
-    def get_parcels_statuses(self):
+    def get_parcels_statuses(self) -> JSONType:
         """
         This endpoint will return all possible parcel statuses.
 

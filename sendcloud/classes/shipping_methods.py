@@ -1,9 +1,10 @@
 import sendcloud
 from sendcloud.http import Client
+from sendcloud.types import JSONType
 
 
 class ShippingMethods(Client):
-    def get_shipping_methods(self):
+    def get_shipping_methods(self) -> JSONType:
         """
         This endpoint will return the shipping methods that are associated with your default sender address.
         If you want to change that behaviour please provide
@@ -18,7 +19,7 @@ class ShippingMethods(Client):
 
         return response.json()
 
-    def get_shipping_method(self, pk: str, query: dict = None):
+    def get_shipping_method(self, pk: str, query: dict = None) -> JSONType:
         """
         This individual shipping method endpoint will provide you with a single
         detailed shipping method information based on the id that you request.

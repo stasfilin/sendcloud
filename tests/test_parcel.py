@@ -51,7 +51,9 @@ class TestParcels(SendcloudTestCase):
                 "email": "john@doe.com",
                 "data": [],
                 "country": "NL",
-                "shipment": {"id": 8,},
+                "shipment": {
+                    "id": 8,
+                },
                 "weight": "10.000",
                 "order_number": "1234567890",
                 "insured_value": 2000,
@@ -85,7 +87,9 @@ class TestParcels(SendcloudTestCase):
                     "email": "john@doe.com",
                     "data": [],
                     "country": "NL",
-                    "shipment": {"id": 8,},
+                    "shipment": {
+                        "id": 8,
+                    },
                     "weight": "10.000",
                     "order_number": "1234567890",
                     "insured_value": 2000,
@@ -102,7 +106,9 @@ class TestParcels(SendcloudTestCase):
                     "email": "john@doe.com",
                     "data": [],
                     "country": "NL",
-                    "shipment": {"id": 8,},
+                    "shipment": {
+                        "id": 8,
+                    },
                     "weight": "8.000",
                     "order_number": "1234567891",
                     "insured_value": 500,

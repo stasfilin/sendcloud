@@ -8,7 +8,7 @@ import sendcloud
 class Client(object):
     client = requests.Session()
 
-    def _get_headers(self):
+    def _get_headers(self) -> dict:
         headers = {"Content-Type": "application/json"}
         if sendcloud.PARTNER_ID:
             headers["Sendcloud-Partner-Id"] = sendcloud.PARTNER_ID

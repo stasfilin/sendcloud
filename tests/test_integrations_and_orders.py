@@ -77,7 +77,9 @@ class TestParcels(SendcloudTestCase):
 
         with requests_mock.Mocker() as mocker:
             mocker.register_uri(
-                "POST", sendcloud.BASE_URL + "integrations/1/shipments/delete", json={},
+                "POST",
+                sendcloud.BASE_URL + "integrations/1/shipments/delete",
+                json={},
             )
 
             integrations = IntegrationsAndOrders().delete_orders("1", payload)
