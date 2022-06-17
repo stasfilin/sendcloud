@@ -1,9 +1,10 @@
 import sendcloud
 from sendcloud.http import Client
+from sendcloud.types import JSONType
 
 
 class Returns(Client):
-    def get_returns(self):
+    def get_returns(self) -> JSONType:
         """
         This endpoint retrieves all returns, both created through the return portal or the API.
         Depending on whether a return parcel contains items or not, the refund, reason,
@@ -17,7 +18,7 @@ class Returns(Client):
 
         return response.json()
 
-    def get_return(self, pk: str):
+    def get_return(self, pk: str) -> JSONType:
         """
         This endpoint retrieves a specific return from your account based on ID.
         Depending on whether a return parcel contains items or not, the refund, reason,

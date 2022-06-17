@@ -5,7 +5,7 @@ import json
 class WebHooks(object):
     API_SECRET: str
 
-    def payload_validation(self, data: dict):
+    def payload_validation(self, data: dict) -> str:
         """
         https://docs.sendcloud.sc/api/v2/shipping/#payload-validation-1
 
@@ -22,7 +22,7 @@ class WebHooks(object):
         )
         return signature.hexdigest()
 
-    def _get_headers(self, signature: str):
+    def _get_headers(self, signature: str) -> dict:
         """
         https://docs.sendcloud.sc/api/v2/shipping/#webhook-request
 
