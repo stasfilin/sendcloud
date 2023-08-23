@@ -18,7 +18,7 @@ class SenderAddress(Client):
 
     def get_single_sender_address(self, pk: str):
         """
-        With this enpoint you can get a specific invoice that has been issued to your account.
+        With this endpoint you can get a specific invoice that has been issued to your account.
 
         :param pk:
         :return:
