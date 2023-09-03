@@ -28,7 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements/base.txt
         pip install -r requirements/development.txt
-        pip install -e .[develop]
     - name: Test with pytest
       run: |
-        python setup.py test
+        pytest tests -s
