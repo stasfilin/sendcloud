@@ -3,7 +3,7 @@ from sendcloud.http import Client
 
 
 class ShippingMethods(Client):
-    def get_shipping_methods(self):
+    def get_shipping_methods(self, query: dict = None):
         """
         This endpoint will return the shipping methods that are associated with your default sender address.
         If you want to change that behaviour please provide
@@ -14,7 +14,7 @@ class ShippingMethods(Client):
 
         url = sendcloud.BASE_URL + "shipping_methods"
 
-        response = self.get(url)
+        response = self.get(url, query)
 
         return response.json()
 
