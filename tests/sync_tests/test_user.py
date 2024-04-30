@@ -1,6 +1,6 @@
 import requests_mock
 
-from tests.testcase import SendcloudTestCase
+from .testcase import SendcloudTestCase
 
 import sendcloud
 from sendcloud.classes import Users
@@ -13,7 +13,9 @@ class TestParcels(SendcloudTestCase):
     def test_get_current_user(self):
         with requests_mock.Mocker() as mocker:
             mocker.register_uri(
-                "GET", sendcloud.BASE_URL + "user", json=self.get_fixture("user.json"),
+                "GET",
+                sendcloud.BASE_URL + "user",
+                json=self.get_fixture("user.json"),
             )
 
             user = Users().get_current_user()
