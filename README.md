@@ -1,3 +1,7 @@
+# This project has been archived.
+# The maintainers of this project have marked this project as archived. No new releases are expected.
+
+---
 # SendCloud
 ![Python package](https://github.com/stasfilin/sendcloud/workflows/Python%20package/badge.svg?branch=master)
 [![Downloads](https://pepy.tech/badge/sendcloud-python)](https://pepy.tech/project/sendcloud-python)
